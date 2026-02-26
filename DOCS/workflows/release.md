@@ -11,8 +11,8 @@ Sortir une version `vX.YYY` (ex: `v3.432`) de façon reproductible :
 - génération `CHANGELOG.md` (git-cliff),
 - mise à jour `DOCS/CHANGELOG.md` (public),
 - commit + tag,
-- (optionnel) push + GitHub Release,
-- publication du miroir public (repo `tommysuzanne/aurora-ea`),
+- push (repo privé `tommysuzanne/aurora-ea-dev`) + GitHub Release,
+- publication du miroir public (repo `tommysuzanne/aurora-ea`) via GitHub Actions (sur tag `v*`),
 - backup (miroir + bundle).
 
 ## Sources
@@ -41,18 +41,24 @@ git status --porcelain
 python scripts/release.py --version 3.432
 ```
 
-3) (Optionnel) Publier le miroir public (recommandé au tag)
+3) Push (repo privé `origin` configuré)
+
+```sh
+python scripts/release.py --version 3.432 --push
+```
+
+4) Publication miroir public (automatique)
+
+À la poussée du tag `v*` sur `origin`, GitHub Actions du repo privé publie le miroir public.
+
+Voir : `DOCS/workflows/public-mirror.md` (section “CI (automatique)”).
+
+5) Fallback manuel (si CI en panne)
 
 TODO(verify): choisir un chemin local de clone du repo public — Comment obtenir: cloner `git@github.com:tommysuzanne/aurora-ea.git` dans un dossier local (ex: `/path/to/aurora-ea`).
 
 ```sh
-python scripts/release.py --version 3.432 --publish-public --public-path /path/to/aurora-ea
-```
-
-4) (Optionnel) Push (si `origin` configuré)
-
-```sh
-python scripts/release.py --version 3.432 --push
+python scripts/publish_public_mirror.py --public-path /path/to/aurora-ea --tag v3.432
 ```
 
 ## GitHub Release (CI)
@@ -86,4 +92,4 @@ git bundle create AURORA-YYYYMMDD.bundle --all
 - Git workflow : `git-workflow.md`
 
 ## Last verified
-Last verified: 2026-02-26 — Méthode: mise à jour du workflow (changelog public + miroir public) et vérification des liens locaux via `python scripts/ci/check_docs_links.py`.
+Last verified: 2026-02-26 — Méthode: mise à jour du workflow (push repo privé + miroir public via CI) et vérification des liens locaux via `python scripts/ci/check_docs_links.py`.

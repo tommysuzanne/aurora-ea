@@ -8,8 +8,8 @@ Event-driven, modular MetaTrader 5 (MQL5) Expert Advisor.
 [![Platform](https://img.shields.io/badge/platform-MetaTrader%205-green.svg)](https://www.metatrader5.com)
 [![License](https://img.shields.io/badge/license-Personal%20Use%20%2F%20Commercial-lightgrey.svg)](#licence)
 
-Ce dépôt GitHub est un **miroir public** (read-only) publié au moment des tags de release `vX.YYY` (voir
-[`DOCS/workflows/public-mirror.md`](./DOCS/workflows/public-mirror.md)).
+Un miroir public (read-only) est publié sur `tommysuzanne/aurora-ea` au moment des tags de release `vX.YYY`
+(voir [`DOCS/workflows/public-mirror.md`](./DOCS/workflows/public-mirror.md)).
 
 ## Points clés
 

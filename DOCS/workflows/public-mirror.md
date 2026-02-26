@@ -18,8 +18,8 @@ Publier un dépôt GitHub **public** contenant uniquement :
 
 Ce dépôt public sert de distribution “read-only” : **pas de développement direct** dedans (sauf hotfix exceptionnel).
 
-Note : la publication du miroir s’effectue depuis le **repo de développement** (celui-ci), via un script mainteneur.
-Le repo public ne contient pas `scripts/`.
+Note : la publication du miroir s’effectue depuis le **repo de développement** (privé), via CI (automatique) ou via un
+script mainteneur. Le repo public ne contient pas `scripts/`.
 
 ## Sources
 
@@ -65,6 +65,18 @@ Via la release (intégré) :
 python scripts/release.py --version 3.432 --publish-public --public-path /path/to/aurora-ea
 ```
 
+## CI (automatique)
+
+Le repo privé `tommysuzanne/aurora-ea-dev` publie le miroir public à chaque push d’un tag `v*` via GitHub Actions.
+
+Pré-requis (une fois) :
+
+1) Ajouter une deploy key “write” au repo public (Deploy keys).
+2) Ajouter la clé privée dans les secrets du repo privé :
+   - secret : `AURORA_PUBLIC_MIRROR_DEPLOY_KEY`
+
+Workflow CI : `.github/workflows/public-mirror.yml` (repo privé).
+
 ## Notes
 
 - Le miroir utilise une **allowlist** : tout fichier hors périmètre est supprimé côté repo public.
@@ -72,4 +84,4 @@ python scripts/release.py --version 3.432 --publish-public --public-path /path/t
 
 ## Last verified
 
-Last verified: 2026-02-26 — Méthode: ajout du workflow + définition de l’allowlist miroir.
+Last verified: 2026-02-26 — Méthode: ajout section CI + vérification cohérence workflow release.

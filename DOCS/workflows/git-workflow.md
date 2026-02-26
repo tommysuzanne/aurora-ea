@@ -38,6 +38,13 @@ TODO(verify): utiliser `pre-commit` en local — Comment obtenir: installer `pre
 
 ## Workflow quotidien (GitHub flow)
 
+## Remotes & repos
+
+- Repo de développement (privé, source-of-truth) : `tommysuzanne/aurora-ea-dev`
+  - `origin` doit pointer sur : `git@github.com:tommysuzanne/aurora-ea-dev.git`
+- Repo public (miroir minimal, read-only) : `tommysuzanne/aurora-ea`
+  - publié automatiquement au tag `v*` (voir `DOCS/workflows/public-mirror.md`)
+
 1) Créer une branche
 
 ```sh
@@ -67,5 +74,4 @@ TODO(verify): GitHub Linguist / coloration MQL5 — Comment obtenir: pousser le 
 - Doc DoD : `../maintenance/doc-dod.md`
 
 ## Last verified
-Last verified: 2026-02-25 — Méthode: vérification des fichiers `.gitattributes`, `.gitignore`, `.githooks/` et exécution locale de `python scripts/ci/check_docs_links.py`.
-
+Last verified: 2026-02-26 — Méthode: ajout section remotes + exécution locale de `python scripts/ci/check_docs_links.py`.
