@@ -21,7 +21,7 @@ Sans s’y limiter, est considéré comme usage commercial :
 Le modèle visé est une **redevance liée à la performance/profit** réalisé grâce à l’EA, définie contractuellement
 avec l’entreprise (définition du “profit”, périmètre, reporting, droit d’audit, modalités de paiement).
 
-TODO(verify): définir un contact commercial officiel — Comment obtenir: choisir un email pro dédié et l’ajouter ici.
+Contact : `hello@tommysuzanne.com`
 
 ## Process (high-level)
 
@@ -29,3 +29,13 @@ TODO(verify): définir un contact commercial officiel — Comment obtenir: chois
 2) NDA (si nécessaire).
 3) Contrat de licence commerciale (conditions, redevance, reporting, audit).
 4) Onboarding (procédure d’installation, compilation, validation, go-live).
+
+## Pour accélérer (informations à fournir)
+
+Dans le premier email, merci d’indiquer :
+
+- société / pays / site (si applicable),
+- usage envisagé (interne, service à des tiers, multi-comptes, etc.),
+- broker(s) / symboles / horizons (timeframes),
+- contraintes (SLA, déploiement, monitoring, audit),
+- objectif du contrat (licence simple, redevance liée à la performance, etc.).

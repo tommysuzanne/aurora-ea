@@ -19,6 +19,8 @@ Décrire le modèle de licence d’Aurora EA :
 - Toute utilisation en entreprise, prestation, “as-a-service”, ou pour des tiers est **interdite** sans licence
   commerciale.
 
+Commercial : `hello@tommysuzanne.com`
+
 ## Définitions (simplifiées)
 
 - **Usage personnel** : usage par une personne physique pour son compte (même si cela génère un profit), hors cadre

@@ -9,6 +9,9 @@ Publier un dépôt GitHub **public** contenant uniquement :
 - `README.md`
 - `LICENSE`
 - `COMMERCIAL.md`
+- `SECURITY.md`
+- `SUPPORT.md`
+- `CONTRIBUTING.md`
 - `DOCS/CHANGELOG.md`
 - `.gitattributes` (template miroir)
 - `.gitignore` (template miroir)
@@ -30,6 +33,12 @@ Le repo public ne contient pas `scripts/`.
 Le miroir public est mis à jour **au moment des releases taggées** (`vX.YYY`).
 
 Règle : le repo public reçoit **le même tag** `vX.YYY` que la release.
+
+Note : des mises à jour “docs/meta” peuvent être publiées sans nouveau tag (exception).
+
+## Contact
+
+- Commercial / support / sécurité : `hello@tommysuzanne.com`
 
 ## Procédure (mainteneur)
 
