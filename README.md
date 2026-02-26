@@ -1,10 +1,8 @@
 # Aurora EA (MetaTrader 5 / MQL5)
 
-> Ce dépôt public contient uniquement `DOCS/`, `MQL5/` et `README.md`.
-
 [![Version](https://img.shields.io/badge/version-3.431-blue.svg)](https://github.com/tommysuzanne)
 [![Platform](https://img.shields.io/badge/platform-MetaTrader%205-green.svg)](https://www.metatrader5.com)
-[![License](https://img.shields.io/badge/license-Proprietary-lightgrey.svg)](#license)
+[![License](https://img.shields.io/badge/license-Personal%20Use%20%2F%20Commercial-lightgrey.svg)](#licence)
 
 Version code : `3.431` (source-of-truth : `MQL5/Experts/Aurora.mq5`, `AURORA_VERSION`).
 
@@ -17,8 +15,8 @@ Aurora est un **Expert Advisor MetaTrader 5 (MQL5)** événementiel et modulaire
 
 Liens rapides :
 - Documentation technique (index) : [`DOCS/index.md`](./DOCS/index.md)
-- Git workflow (local-first) : [`DOCS/workflows/git-workflow.md`](./DOCS/workflows/git-workflow.md)
-- Release (version + changelog auto) : [`DOCS/workflows/release.md`](./DOCS/workflows/release.md)
+- Installation / compilation : [`DOCS/getting-started/install-compile.md`](./DOCS/getting-started/install-compile.md)
+- Licence & usage : [`DOCS/reference/licensing.md`](./DOCS/reference/licensing.md)
 - Legacy monolith (complet, historique — peut diverger du code) : [`DOCS/legacy/Aurora_Documentation.md`](./DOCS/legacy/Aurora_Documentation.md)
 - Entrypoint : [`MQL5/Experts/Aurora.mq5`](./MQL5/Experts/Aurora.mq5)
 
@@ -54,15 +52,6 @@ Notes :
 
 Aurora inclut une simulation optionnelle “reality check” pour le Strategy Tester :
 - `InpSim_*` permet de simuler latence, slippage, rejets, padding de spread (et commission simulée).
-
-## JP225 (IC Markets) — Data-first research
-
-Workflow pour exploiter `TICKS/JPNIDXJPY_mt5_ticks.csv` et produire des recommandations (sessions/exec) avant optimisation Cloud :
-
-- Doc: [`DOCS/workflows/jp225-data-research.md`](./DOCS/workflows/jp225-data-research.md)
-- Scripts: `scripts/jp225/*`
-- Contrat broker MT5 (spread live+sampling, volumes, contrat/argent, filling/exécution): [`MQL5/Scripts/Aurora_SymbolInfoDump.mq5`](./MQL5/Scripts/Aurora_SymbolInfoDump.mq5)
-- Outputs: `REPORTS/` et `PLANS/`
 
 ## Structure du projet
 
@@ -112,7 +101,15 @@ MQL5/
 ## Avertissement
 
 Le trading comporte des risques significatifs. Ce dépôt est fourni à des fins de test/éducation ; aucune garantie de performance.
+Rien ici ne constitue un conseil en investissement.
 
 ## Licence
 
-Propriétaire. Tous droits réservés.
+Gratuite pour **usage personnel** (personne physique), code visible et modifiable.
+Toute **exploitation commerciale** (entreprise, prestation, “as-a-service”, usage pour des tiers) nécessite une licence
+commerciale.
+
+- Détails : [`LICENSE`](./LICENSE)
+- Licence commerciale : [`COMMERCIAL.md`](./COMMERCIAL.md)
+
+Contributions : ce dépôt est publié principalement pour lecture/usage. Les PR externes ne sont pas acceptées (issues OK).

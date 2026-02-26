@@ -1,0 +1,65 @@
+Aurora EA — Personal Use License v1.0
+
+Copyright (c) 2026 Tommy Suzanne
+All rights reserved.
+
+## 1) Objectif
+
+Cette licence autorise l’accès au code, son utilisation et sa modification **pour un usage personnel**.
+Toute **exploitation commerciale** requiert une licence commerciale séparée (voir `COMMERCIAL.md`).
+
+## 2) Définitions
+
+- **“Vous”** : toute personne physique utilisant le Logiciel.
+- **“Logiciel”** : l’ensemble des fichiers contenus dans ce dépôt (code, documentation, ressources).
+- **“Usage personnel”** : usage par une personne physique, pour ses besoins personnels, y compris l’exécution en trading
+  pour son propre compte (même si cela génère un profit), à condition que cet usage ne soit pas réalisé :
+  - au nom d’une entreprise ou d’une organisation,
+  - dans le cadre d’une activité professionnelle (salariée, indépendante, prestation, conseil, formation payante),
+  - pour fournir un service à des tiers (signal, copie, gestion, “as-a-service”, hébergement, accès à distance),
+  - pour le compte de tiers, ou sur des comptes de tiers.
+- **“Usage commercial”** : tout usage qui n’est pas un Usage personnel, notamment tout usage par une personne morale
+  (entreprise, association, fonds, etc.) ou toute mise à disposition à des tiers contre rémunération ou avantage.
+
+## 3) Droits accordés (Usage personnel)
+
+Sous réserve du respect de cette licence, vous pouvez, pour un Usage personnel uniquement :
+
+- utiliser le Logiciel ;
+- copier et modifier le Logiciel ;
+- partager le Logiciel (y compris modifié) avec d’autres personnes physiques pour leur Usage personnel, à condition de :
+  - conserver les mentions de copyright et cette licence,
+  - indiquer clairement que l’Usage commercial est interdit sans licence commerciale.
+
+## 4) Restrictions
+
+Vous ne pouvez pas, sans licence commerciale écrite accordée par le titulaire des droits :
+
+- utiliser le Logiciel à des fins commerciales (telles que définies ci-dessus) ;
+- vendre, licencier, sous-licencier ou monétiser l’accès au Logiciel ;
+- fournir le Logiciel comme service (“SaaS”), produit, ou composant d’une offre commerciale ;
+- contourner ou supprimer les mentions de droits d’auteur et d’attribution.
+
+## 5) Avertissement (trading) — pas un conseil
+
+Le trading comporte des risques significatifs de pertes. Le Logiciel est fourni à des fins d’expérimentation et
+d’éducation. Rien dans ce dépôt ne constitue un conseil en investissement, fiscal ou juridique.
+
+## 6) Absence de garantie
+
+LE LOGICIEL EST FOURNI “EN L’ÉTAT”, SANS GARANTIE D’AUCUNE SORTE (EXPRESSE OU IMPLICITE), DANS LA LIMITE MAXIMALE
+AUTORISÉE PAR LA LOI APPLICABLE.
+
+## 7) Limitation de responsabilité
+
+Dans la limite maximale autorisée par la loi applicable, le titulaire des droits ne pourra en aucun cas être tenu
+responsable des dommages directs ou indirects (y compris pertes financières, pertes de profits, pertes de données,
+interruption d’activité) résultant de l’utilisation ou de l’impossibilité d’utiliser le Logiciel.
+
+## 8) Résiliation
+
+La violation de cette licence met fin automatiquement aux droits qui vous sont accordés par cette licence.
+
+## 9) Droit applicable
+
+Cette licence est régie par le droit français (France), sous réserve des règles impératives applicables.

@@ -2,12 +2,17 @@
 
 ## Objectif
 
+Ce workflow s’applique au **repo de développement** (celui-ci). Le miroir public (`tommysuzanne/aurora-ea`) ne contient
+pas les fichiers d’outillage (`scripts/`, CI, etc.).
+
 Sortir une version `vX.YYY` (ex: `v3.432`) de façon reproductible :
 - bump de `AURORA_VERSION`,
 - mise à jour `README.md`,
 - génération `CHANGELOG.md` (git-cliff),
+- mise à jour `DOCS/CHANGELOG.md` (public),
 - commit + tag,
 - (optionnel) push + GitHub Release,
+- publication du miroir public (repo `tommysuzanne/aurora-ea`),
 - backup (miroir + bundle).
 
 ## Sources
@@ -16,6 +21,7 @@ Sortir une version `vX.YYY` (ex: `v3.432`) de façon reproductible :
 - Release helper : `scripts/release.py`
 - Changelog : `cliff.toml`, `CHANGELOG.md`
 - Conventions : `CONTRIBUTING.md`
+- Miroir public : `DOCS/workflows/public-mirror.md`, `scripts/publish_public_mirror.py`
 
 ## Pré-requis
 
@@ -35,7 +41,15 @@ git status --porcelain
 python scripts/release.py --version 3.432
 ```
 
-3) (Optionnel) Push (si `origin` configuré)
+3) (Optionnel) Publier le miroir public (recommandé au tag)
+
+TODO(verify): choisir un chemin local de clone du repo public — Comment obtenir: cloner `git@github.com:tommysuzanne/aurora-ea.git` dans un dossier local (ex: `/path/to/aurora-ea`).
+
+```sh
+python scripts/release.py --version 3.432 --publish-public --public-path /path/to/aurora-ea
+```
+
+4) (Optionnel) Push (si `origin` configuré)
 
 ```sh
 python scripts/release.py --version 3.432 --push
@@ -72,5 +86,4 @@ git bundle create AURORA-YYYYMMDD.bundle --all
 - Git workflow : `git-workflow.md`
 
 ## Last verified
-Last verified: 2026-02-25 — Méthode: revue de `scripts/release.py` + vérification des liens locaux via `python scripts/ci/check_docs_links.py`.
-
+Last verified: 2026-02-26 — Méthode: mise à jour du workflow (changelog public + miroir public) et vérification des liens locaux via `python scripts/ci/check_docs_links.py`.

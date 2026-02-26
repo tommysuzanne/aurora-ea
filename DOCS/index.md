@@ -25,6 +25,7 @@ Cette arborescence `DOCS/` est la **documentation “système d’enregistrement
 - Inputs (liste + defaults + descriptions) : [`inputs/index.md`](inputs/index.md)
 - Dépannage / FAQ : [`troubleshooting/index.md`](troubleshooting/index.md)
 - Références (enums, glossaire) : [`reference/index.md`](reference/index.md)
+- Licence & usage : [`reference/licensing.md`](reference/licensing.md)
 
 ## Où est la vérité (source-of-truth)
 

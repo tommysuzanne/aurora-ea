@@ -1,0 +1,16 @@
+# Keep diffs stable across platforms.
+* text=auto
+
+# Documentation
+*.md text eol=lf
+
+# MQL5 sources (MetaEditor typically uses CRLF)
+*.mq5 text eol=crlf
+*.mqh text eol=crlf
+
+# Images / binaries
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.bmp binary
+*.ico binary

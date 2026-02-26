@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# MetaTrader build artifacts
+**/*.ex5
+**/*.ex4
+**/*.log
+
+# Editors
+.vscode/
+.idea/

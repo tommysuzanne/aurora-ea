@@ -7,6 +7,7 @@
 - Git workflow (local-first) : [`git-workflow.md`](git-workflow.md)
 - Codex permissions (approvals Git) : [`codex-permissions.md`](codex-permissions.md)
 - Release (version + changelog) : [`release.md`](release.md)
+- Miroir public GitHub : [`public-mirror.md`](public-mirror.md)
 - Tests temporels (script) : [`temporal-edge-tests.md`](temporal-edge-tests.md)
 - Exec-plan (quand planifier) : [`exec-plan.md`](exec-plan.md)
 - Recherche data JP225 (ticks) : [`jp225-data-research.md`](jp225-data-research.md)

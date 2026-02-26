@@ -4,6 +4,7 @@
 
 - Enums : [`enums.md`](enums.md)
 - Glossaire : [`glossary.md`](glossary.md)
+- Licence & usage : [`licensing.md`](licensing.md)
 - JP225 (IC Markets) : [`jp225-icm.md`](jp225-icm.md)
 
 ## Last verified
